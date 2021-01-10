@@ -2,6 +2,9 @@
   <div id="app">
     <header>Minhas Tarefas</header>
     <task/>
+    <div class="rodape">
+      <span> 2021 &copy; </span>
+    </div>
   </div>
 </template>
 
@@ -27,4 +30,11 @@ export default {
     color: #FBFAF8;
   }
 
+  .rodape {
+    color: #FBFAF8;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 12px;
+  }
 </style>
