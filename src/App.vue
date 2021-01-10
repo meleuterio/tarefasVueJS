@@ -3,7 +3,7 @@
     <header>Minhas Tarefas</header>
     <task/>
     <div class="rodape">
-      <span> 2021 &copy; </span>
+      <span> 2021 - &copy; </span>
     </div>
   </div>
 </template>
