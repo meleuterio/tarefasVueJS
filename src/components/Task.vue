@@ -46,18 +46,17 @@ export default {
             let filtro = this.tarefas.filter( (item) => { //salvar dentro de filtro, todas tarefas diferentes da key passada
                 return (item.key !== key)
             })
-
             return this.tarefas = filtro
         }
     },
     watch: {
         tarefas() {
-            localStorage.setItem('tasks', JSON.stringify(this.tarefas))
+            localStorage.setItem('tarefas', JSON.stringify(this.tarefas)) //setando array convertida no localStorage
             this.tarefas.length > 4 ? this.pendente = true : this.pendente = false
         },
     },
     created() { //chamado automaticamente sempre que a instancia do Vue for criada
-        const json = localStorage.getItem('tasks')
+        const json = localStorage.getItem('tarefas')
         this.tarefas = JSON.parse(json) || []
     }
 }
